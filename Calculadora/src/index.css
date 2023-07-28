@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+
+  background-color: black;
+  color: white;
+}
+
+.card {
+  width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+
+  background-color: rgb(37, 36, 36);
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  padding-right: 20px;
+}
+
+.screen span {
+  font-size: 40px;
+  font-weight: 300;
+  opacity: 0.4;
+}
+
+.screen h1 {
+  font-size: 96px;
+  font-weight: 300;
+  line-height: 96px;
+
+  margin-block: 16px;
+}
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 16px;
+}
+
+button {
+  all: unset;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 24px;
+
+  background-color: #2E2F38;
+  color: white;
+
+  font-size: 32px;
+  line-height: 40px;
+
+  cursor: pointer;
+}
