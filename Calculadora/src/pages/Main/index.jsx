@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import './style.css';
+import ButtonCalc from '../../assets/Buttoncalc';
 
 function Main() {
-  const [count, setCount] = useState(0);
+  const [buttonscalc, setButtonCalc] = useState([...ButtonCalc]);
 
   return (
     <div className='container'>
@@ -12,26 +13,12 @@ function Main() {
           <h1>6250</h1>
         </div>
         <div className='numbers'>
-          <button>.</button>
-          <button>0</button>
-          <button>B</button>
-          <button>=</button>
-          <button>.</button>
-          <button>0</button>
-          <button>B</button>
-          <button>=</button>
-          <button>.</button>
-          <button>0</button>
-          <button>B</button>
-          <button>=</button>
-          <button>.</button>
-          <button>0</button>
-          <button>B</button>
-          <button>=</button>
-          <button>.</button>
-          <button>0</button>
-          <button>B</button>
-          <button>=</button>
+          {buttonscalc.map((buttoncalc) => (
+            <button
+              key={buttoncalc.id}
+              className={buttoncalc.color}
+            >{buttoncalc.value}</button>
+          ))}
         </div>
       </div>
     </div>
