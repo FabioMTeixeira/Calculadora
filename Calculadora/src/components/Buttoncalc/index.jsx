@@ -2,22 +2,22 @@ const ButtonCalc = [
     {
         id: 1,
         value: 'C',
-        color: 'normal'
+        color: 'button-gray'
     },
     {
         id: 2,
         value: '-N',
-        color: 'normal'
+        color: 'button-gray'
     },
     {
         id: 3,
         value: '%',
-        color: 'normal'
+        color: 'button-gray'
     },
     {
         id: 4,
         value: '/',
-        color: 'normal'
+        color: 'button-blue'
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ const ButtonCalc = [
     {
         id: 8,
         value: 'x',
-        color: 'normal'
+        color: 'button-blue'
     },
     {
         id: 9,
@@ -57,7 +57,7 @@ const ButtonCalc = [
     {
         id: 12,
         value: '-',
-        color: 'normal'
+        color: 'button-blue'
     },
     {
         id: 13,
@@ -77,7 +77,7 @@ const ButtonCalc = [
     {
         id: 16,
         value: '+',
-        color: 'normal'
+        color: 'button-blue'
     },
     {
         id: 17,
@@ -97,7 +97,7 @@ const ButtonCalc = [
     {
         id: 20,
         value: '=',
-        color: 'normal'
+        color: 'button-blue'
     },
 ];
 

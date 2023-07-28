@@ -68,3 +68,11 @@ button {
 
   cursor: pointer;
 }
+
+.button-gray {
+  background-color: #4E505F;
+}
+
+.button-blue {
+  background-color: #4B5EFC;
+}
