@@ -12,18 +12,53 @@ function Main() {
   const [num1, setNum1] = useState(0);
   const [num2, setNum2] = useState(0);
   const [discoveryNum2, setDiscoveryNum2] = useState(0);
+  const [result, setResult] = useState(0);
 
   function handleShowButtons(newValue) {
     const localTouchedButton = [...touchedButton];
 
     const addButton = buttonscalc.find((button) => button.value === newValue);
 
+    if (addButton.value === 'C') {
+      localTouchedButton.splice(0, localTouchedButton.length);
+      setTouchedButton(localTouchedButton);
+      setOnScreen(0);
+      setResult(0);
+      return;
+    }
+
     if (addButton.operator && addButton.value !== '=') {
-      setNum1(localTouchedButton.join(''));
+      setNum1(parseFloat(localTouchedButton.join('')));
       setOperator(addButton.value);
       setDiscoveryNum2(localTouchedButton.length + 1);
     } else if (addButton.operator && addButton.value === '=') {
-      setNum2(localTouchedButton.slice(discoveryNum2, localTouchedButton.length).join(''));
+      const number2 = (parseFloat(localTouchedButton.slice(discoveryNum2, localTouchedButton.length).join('')));
+      setNum2(number2);
+
+      if (operator === '+') {
+        setResult(num1 + number2);
+        setTouchedButton([]);
+        setOnScreen(0);
+        return;
+      }
+      else if (operator === '-') {
+        setResult(num1 - number2);
+        setTouchedButton([]);
+        setOnScreen(0);
+        return;
+      }
+      else if (operator === '*') {
+        setResult(num1 * number2);
+        setTouchedButton([]);
+        setOnScreen(0);
+        return;
+      }
+      else if (operator === '/') {
+        setResult(num1 / number2);
+        setTouchedButton([]);
+        setOnScreen(0);
+        return;
+      }
     }
 
     localTouchedButton.push(addButton.value);
@@ -33,12 +68,6 @@ function Main() {
       setOnScreen(localTouchedButton);
     }
 
-    if (addButton.value === 'C') {
-      localTouchedButton.splice(0, localTouchedButton.length);
-      setTouchedButton(localTouchedButton);
-      setOnScreen('0');
-      return;
-    }
   }
 
   return (
@@ -46,7 +75,7 @@ function Main() {
       <div className='card'>
         <div className='screen'>
           <span>{onScreen}</span>
-          <h1>{num1}{operator}={num2}</h1>
+          <h1>{result}</h1>
         </div>
         <div className='numbers'>
           {buttonscalc.map((buttoncalc) => (

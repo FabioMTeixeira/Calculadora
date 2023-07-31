@@ -43,7 +43,7 @@ const ButtonCalc = [
     },
     {
         id: 8,
-        value: 'x',
+        value: '*',
         operator: true,
         color: 'button-blue'
     },
