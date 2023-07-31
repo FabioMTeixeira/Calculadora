@@ -1,8 +1,28 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Calculadora na Web
 
-Currently, two official plugins are available:
+Quando for aberta a página será mostrado uma calculadora normal só que feita para uma página web. Ainda estou trabalahndo nas funcionalidades de alguns botões, mas as funções principais da calculadora de somar, subtrair, dividir e multiplicar está funcionando.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Instalação
+
+- Fazer o fork do repositório para sua conta
+- Executar git clone do seu fork no terminal para clonar o repositório, ou clonar de outra maneira
+- Após fazer e commitar todos os exercícios fazer o git push para seu fork
+  
+## Aprendizados
+
+Criando este projeto pude aprimorar um conhecimento em Hooks, com o useState, e a manipula-los utilizando as funções e métodos, além da utilização do map para a criação de conteudos iguais. Com a criação deste projeto tive dificuldade principalmente para a funcionalidade dos botões de operadores matemáticas e para implementa-los precisei fazer vários testes e ajustes.
+
+## Stack utilizada
+
+**Front-end:** HTML, CSS, React
+
+
+
+
+
+## Autores
+
+- [@FabioMTeixeira](https://github.com/FabioMTeixeira)
+
